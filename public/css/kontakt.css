@@ -1,0 +1,17 @@
+.form-message {
+  min-height: 1.4rem;
+  font-size: 0.95rem;
+}
+
+.form-message.success {
+  color: #0f7a3a;
+}
+
+.form-message.error {
+  color: #b42318;
+}
+
+button[disabled] {
+  cursor: wait;
+  opacity: 0.72;
+}
