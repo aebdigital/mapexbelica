@@ -1247,20 +1247,38 @@
   }
 
   .mobile-nav {
-    position: absolute;
-    top: calc(100% + 1px);
+    position: fixed;
+    top: auto;
     right: 0;
+    bottom: 0;
     left: 0;
     display: grid;
-    gap: 8px;
-    padding: 18px;
+    height: 70vh;
+    align-content: start;
+    gap: 18px;
+    padding: 42px 7vw;
     border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 22px 22px 0 0;
     background: #ffffff;
-    box-shadow: 0 16px 40px rgba(0, 32, 92, 0.16);
+    box-shadow: 0 -22px 70px rgba(0, 32, 92, 0.22);
     opacity: 0;
     pointer-events: none;
-    transform: translateY(-8px);
-    transition: opacity 0.22s ease, transform 0.22s ease;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+    z-index: 65;
+  }
+
+  .mobile-nav::before {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 30vh;
+    content: "";
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    pointer-events: none;
   }
 
   .mobile-menu-check:checked ~ .mobile-nav {
@@ -1270,9 +1288,12 @@
   }
 
   .mobile-nav a {
+    position: relative;
+    z-index: 1;
     color: #000000;
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 700;
+    line-height: 1.2;
   }
 
   .hero-grid,
