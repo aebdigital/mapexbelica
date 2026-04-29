@@ -61,6 +61,9 @@ export function Header() {
           <X className="close-icon" aria-hidden="true" />
         </label>
         <nav className="mobile-nav" aria-label="Mobilná navigácia">
+          <label className="mobile-nav-close" htmlFor="mobile-menu" aria-label="Zavrieť mobilné menu">
+            <X aria-hidden="true" />
+          </label>
           {navItems.map((item) => (
             <Link href={item.href} key={item.href} onClick={closeMenu}>
               {item.label}

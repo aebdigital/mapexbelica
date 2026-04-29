@@ -189,6 +189,7 @@
 
   .mobile-menu-check,
   .mobile-menu-button,
+  .mobile-nav-close,
   .mobile-nav,
   .mobile-nav-blur {
     display: none;
@@ -1242,14 +1243,6 @@
     display: none;
   }
 
-  .mobile-menu-check:checked ~ .mobile-menu-button .open-icon {
-    display: none;
-  }
-
-  .mobile-menu-check:checked ~ .mobile-menu-button .close-icon {
-    display: block;
-  }
-
   .mobile-nav {
     position: fixed;
     top: auto;
@@ -1270,6 +1263,25 @@
     transform: translateY(100%);
     transition: opacity 0.3s ease, transform 0.42s cubic-bezier(0.22, 1, 0.36, 1);
     z-index: 65;
+  }
+
+  .mobile-nav-close {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    z-index: 2;
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #000000;
+  }
+
+  .mobile-nav-close svg {
+    width: 28px;
+    height: 28px;
   }
 
   .mobile-nav-blur {
