@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { CheckSquare } from "lucide-react";
 import { Footer } from "@/components/Footer";
+import { GalleryLightbox } from "@/components/GalleryLightbox";
 import { Header } from "@/components/Header";
 import { RollingButton } from "@/components/RollingButton";
 import { galleryImages, materials, services, site } from "@/data/site";
@@ -231,28 +232,7 @@ export default function Home() {
             <span>Naša práca</span>
             <h2>Galéria</h2>
           </div>
-          <div className="gallery-grid">
-            {galleryImages.map(([file, width, height]) => {
-              const src = `${imageBase}${file}`;
-              return (
-                <a
-                  href={src}
-                  className="gallery-item"
-                  key={file}
-                  data-animate
-                  aria-label="Otvoriť fotografiu realizácie"
-                >
-                  <Image
-                    src={src}
-                    alt="Realizácia MaPeX Belica"
-                    width={width}
-                    height={height}
-                    sizes="(max-width: 768px) 50vw, 18vw"
-                  />
-                </a>
-              );
-            })}
-          </div>
+          <GalleryLightbox images={galleryImages} imageBase={imageBase} />
         </section>
       </main>
       <Footer />
