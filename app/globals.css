@@ -85,8 +85,9 @@
     display: flex;
     width: 78%;
     max-width: 1320px;
-    gap: 34px;
+    gap: 18px;
     align-items: center;
+    justify-content: space-between;
     padding: 5px 20px;
     font-family: var(--font-outfit), Outfit, system-ui, sans-serif;
     font-size: 15px;
@@ -101,6 +102,20 @@
     white-space: nowrap;
   }
 
+  .top-strip-inner > a,
+  .top-strip-inner > span {
+    flex: 1 1 0;
+    justify-content: center;
+  }
+
+  .top-strip-inner > :first-child {
+    justify-content: flex-start;
+  }
+
+  .top-strip-inner > :last-child {
+    justify-content: flex-end;
+  }
+
   .top-strip svg {
     width: 22px;
     height: 22px;
@@ -108,7 +123,7 @@
   }
 
   .social-dot {
-    display: inline-grid;
+    display: inline-grid !important;
     width: 24px;
     height: 24px;
     place-items: center;
@@ -326,10 +341,14 @@
   }
 
   .rolling-dark {
-    border: 2px solid #ffffff;
-    background: #ffffff;
-    color: #000000;
+    border: 2px solid #000000;
+    background: #000000;
+    color: #ffffff;
     font-weight: 700;
+  }
+
+  .rolling-dark .rolling-track span {
+    color: #ffffff;
   }
 
   .rolling-track {

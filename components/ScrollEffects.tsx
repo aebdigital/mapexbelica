@@ -11,9 +11,9 @@ export function ScrollEffects() {
       anchors: true
     });
 
-    const animated = document.querySelectorAll<HTMLElement>(
+    const animated = Array.from(document.querySelectorAll<HTMLElement>(
       "[data-animate], main section h1, main section h2, main section h3, main section p, main section a, main section img, footer h2, footer p, footer li, footer form > *"
-    );
+    )).filter((element) => !element.closest(".footer-bottom"));
 
     animated.forEach((element) => element.classList.add("fade-up"));
 
