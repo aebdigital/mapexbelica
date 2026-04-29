@@ -70,6 +70,7 @@ export function Header() {
             Objednať
           </Link>
         </nav>
+        <label className="mobile-nav-blur" htmlFor="mobile-menu" aria-label="Zavrieť mobilné menu" />
       </div>
     </header>
   );
