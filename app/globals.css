@@ -1246,6 +1246,17 @@
     display: block;
   }
 
+  .mobile-menu-check:checked ~ .mobile-menu-button {
+    position: fixed;
+    top: calc(30vh + 18px);
+    right: 24px;
+    z-index: 80;
+    border: 1px solid rgba(0, 32, 92, 0.16);
+    border-radius: 999px;
+    background: #ffffff;
+    box-shadow: 0 12px 28px rgba(0, 32, 92, 0.14);
+  }
+
   .mobile-nav {
     position: fixed;
     top: auto;
@@ -1256,7 +1267,7 @@
     height: 70vh;
     align-content: start;
     gap: 18px;
-    padding: 42px 7vw;
+    padding: 82px 7vw 42px;
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 22px 22px 0 0;
     background: #ffffff;
@@ -1275,9 +1286,9 @@
     left: 0;
     height: 30vh;
     content: "";
-    background: rgba(255, 255, 255, 0.18);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     pointer-events: none;
   }
 
