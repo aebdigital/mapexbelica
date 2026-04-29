@@ -62,10 +62,7 @@ export function CookieConsent() {
               Súbory cookie používame na zlepšenie vášho zážitku z prehliadania,
               poskytovanie prispôsobených reklám alebo obsahu a analýzu našej
               návštevnosti. Kliknutím na „Prijať všetko“ súhlasíte s naším
-              používaním súborov cookie.{" "}
-              <button type="button" onClick={() => setShowSettings(true)}>
-                Nastavenia
-              </button>
+              používaním súborov cookie.
             </p>
           </div>
           <div className="cookie-actions">
