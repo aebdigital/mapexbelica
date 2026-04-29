@@ -5,7 +5,7 @@ import { Header } from "@/components/Header";
 import { RollingButton } from "@/components/RollingButton";
 import { galleryImages, materials, services, site } from "@/data/site";
 
-const uploadBase = "/wp-content/uploads/2025/06/";
+const imageBase = "/images/mapex/";
 
 const schemas = [
   {
@@ -80,7 +80,7 @@ export default function Home() {
         <section className="hero-section">
           <div className="hero-bg" aria-hidden="true">
             <Image
-              src={`${uploadBase}472617390_1153759926753370_3287153295361154705_n-1024x768.jpg`}
+              src={`${imageBase}472617390_1153759926753370_3287153295361154705_n-1024x768.jpg`}
               alt=""
               fill
               priority
@@ -105,7 +105,7 @@ export default function Home() {
 
               <div className="hero-visual" data-animate>
                 <Image
-                  src={`${uploadBase}472617390_1153759926753370_3287153295361154705_n-1024x768.jpg`}
+                  src={`${imageBase}472617390_1153759926753370_3287153295361154705_n-1024x768.jpg`}
                   alt="Vodoinštalatérske práce MaPeX Belica"
                   width={1024}
                   height={768}
@@ -113,14 +113,14 @@ export default function Home() {
                   className="hero-main-image"
                 />
                 <Image
-                  src={`${uploadBase}63fdd8734486a56a441e2a03_Blue-Bg-Banner.png`}
+                  src={`${imageBase}63fdd8734486a56a441e2a03_Blue-Bg-Banner.png`}
                   alt=""
                   width={875}
                   height={356}
                   className="hero-blue-shape"
                 />
                 <Image
-                  src={`${uploadBase}63fdda0f6843a973134015ae_Banner-Lines-Figure.png`}
+                  src={`${imageBase}63fdda0f6843a973134015ae_Banner-Lines-Figure.png`}
                   alt=""
                   width={894}
                   height={356}
@@ -233,7 +233,7 @@ export default function Home() {
           </div>
           <div className="gallery-grid">
             {galleryImages.map(([file, width, height]) => {
-              const src = `${uploadBase}${file}`;
+              const src = `${imageBase}${file}`;
               return (
                 <a
                   href={src}

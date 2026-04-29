@@ -8,3 +8,4 @@ dist/
 tsconfig.tsbuildinfo
 *.log
 _source_mirror/
+public/wp-content/

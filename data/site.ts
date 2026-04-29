@@ -8,8 +8,8 @@ export const site = {
   phoneHref: "tel:+421903843786",
   address: "Žiacka 3704/19, Piešťany – Banka 92101",
   facebook: "https://www.facebook.com/p/Mapex-Belicasro-100063581192737/",
-  logo: "/wp-content/uploads/2025/06/Screenshot-2025-06-04-at-22.24.23.png",
-  ogImage: "/wp-content/uploads/2025/06/Screenshot-2025-06-04-at-22.24.23.png"
+  logo: "/images/mapex/Screenshot-2025-06-04-at-22.24.23.png",
+  ogImage: "/images/mapex/Screenshot-2025-06-04-at-22.24.23.png"
 };
 
 export const navItems = [
