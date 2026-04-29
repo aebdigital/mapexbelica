@@ -62,9 +62,11 @@ export function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>2024© MaPeX Belica s.r.o všetky práva vyhradené.</p>
+        <p>Copyright © 2026 MaPeX Belica s.r.o. Všetky práva vyhradené.</p>
         <p>
-          Tvorba stránky – <a href="https://aebdigital.sk/">AEB Digital</a>
+          <a href="https://aebdigital.sk/" target="_blank" rel="noreferrer">
+            Tvorba webu - AEB Digital
+          </a>
         </p>
       </div>
     </footer>
